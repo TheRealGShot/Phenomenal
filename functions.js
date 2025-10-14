@@ -89,3 +89,6 @@ console.log("Lab5");
 console.log(describeTemperature(32)); // "Freezing!"
 console.log(describeTemperature(68)); // "Cold"
 console.log(describeTemperature(95)); // "Hot"
+
+//Note: Javascript does not support method overloading or overriding. Any time you rewrite a function the old function is omited from the memory. Just like a variable
+//Javascript functions can be assigned to a variable
