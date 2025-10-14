@@ -8,6 +8,7 @@ function calculateCircleArea(radius){
 	return Math.PI*radius*radius;
 }
 //Test cases:
+console.log("Lab1");
 console.log(calculateRectangleArea(5, 10)); // 50
 console.log(calculateCircleArea(3)); // 28.27 (approx)
 
@@ -26,6 +27,7 @@ function gradeCategory(score){
     }
 }
 //Test cases:
+console.log("Lab2");
 console.log(gradeCategory(95)); // "A"
 console.log(gradeCategory(72)); // "C"
 console.log(gradeCategory(58)); // "F"
@@ -34,13 +36,22 @@ console.log(gradeCategory(58)); // "F"
 function countVowels(word){
     let vowels = 0;
     for(let i=0; i<word.length; i++){
-        if(word[i]='a'||word[i]='e'||word[i]='i'||word[i]='o'||word[i]='u'){
+        if(word[i]= "a"){
+            vowels++;
+        } else if (word[i]= "e"){
+            vowels++;
+        } else if (word[i]= "i"){
+            vowels++;
+        } else if (word[i]= "o"){
+            vowels++;
+        } else if (word[i]= "u"){
             vowels++;
         }
     }
     return vowels;
 }
 //Test cases:
+console.log("Lab3");
 console.log(countVowels("hello")); // 2
 console.log(countVowels("Javascript")); // 3
 
@@ -48,11 +59,12 @@ console.log(countVowels("Javascript")); // 3
 function doubleNumbers(numbers){
     let newArr = numbers;
     for(let i=0; i<numbers.length; i++){
-        let newArr[i] = numbers[i]*2;
+        newArr[i] = numbers[i]*2;
     }
     return newArr;
 }
 //Test cases:
+console.log("Lab4");
 console.log(doubleNumbers([1, 2, 3])); // [2, 4, 6]
 console.log(doubleNumbers([-1, 0, 5])); // [-2, 0, 10]
 
@@ -73,6 +85,7 @@ function describeTemperature(f){
     }
 }
 //Test cases:
+console.log("Lab5");
 console.log(describeTemperature(32)); // "Freezing!"
 console.log(describeTemperature(68)); // "Cold"
 console.log(describeTemperature(95)); // "Hot"
