@@ -2,17 +2,15 @@
 
 //Lab1
 calculateRectangleArea = (length, width) => length*width;
+calculateCircleArea = (radius) => Math.PI*radius*radius;
 
-function calculateCircleArea(radius){
-	return Math.PI*radius*radius;
-}
 //Test cases:
 console.log("Lab1");
 console.log(calculateRectangleArea(5, 10)); // 50
 console.log(calculateCircleArea(3)); // 28.27 (approx)
 
 //Lab2
-function gradeCategory(score){
+gradeCategory=(score)=>{
     if (score>=90){
         return "A";
     } else if (score >= 80){
@@ -32,7 +30,7 @@ console.log(gradeCategory(72)); // "C"
 console.log(gradeCategory(58)); // "F"
 
 //Lab3
-function countVowels(word){
+countVowels=(word)=>{
     let vowels = 0;
     for(let i=0; i<word.length; i++){
         if(word[i]= "a"){
@@ -55,7 +53,7 @@ console.log(countVowels("hello")); // 2
 console.log(countVowels("Javascript")); // 3
 
 //Lab4
-function doubleNumbers(numbers){
+doubleNumbers=(numbers)=>{
     let newArr = numbers;
     for(let i=0; i<numbers.length; i++){
         newArr[i] = numbers[i]*2;
@@ -68,10 +66,9 @@ console.log(doubleNumbers([1, 2, 3])); // [2, 4, 6]
 console.log(doubleNumbers([-1, 0, 5])); // [-2, 0, 10]
 
 //Lab5
-function fahrenheitToCelsius(f){
-    return (f - 32) * 5 / 9;
-}
-function describeTemperature(f){
+fahrenheitToCelsius=(f)=>(f - 32) * 5 / 9;
+
+describeTemperature=(f)=>{
     let c = fahrenheitToCelsius(f);
     if (c<0){
         return "Freezing!";
